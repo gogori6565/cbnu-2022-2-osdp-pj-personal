@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 <meta name="viewport" content="width=device-width" initial-scale"="1">
 <link rel="stylesheet" href="css/bootstrap.css">
-<title>JSP 게시판 웹 사이트</title>
+<title>충북대 소프트웨어학과 과목별 게시판</title>
 </head>
 <body>
 	<%
@@ -76,6 +76,25 @@
 	  			<tbody>
 	  				<tr>
 	  					<td><input type="text" class="form-control" placeholder="글 제목" name="bbsTitle" maxlength="50"></td>
+	  				</tr>
+	  				<!-- Subject로 넘겨줄 칼럼값 선택 -->
+	  				<tr>
+	  					<td>
+	  						<div style="float:left;">
+	  							과목 : 
+		  						<select name="Subject_write">
+	
+						          <option value="0">과목 선택</option>
+						
+						          <option value="1">오픈소스</option>
+						
+						          <option value="2">자료구조</option>
+						
+						          <option value="3">컴퓨터시스템개론</option>
+				
+				        		</select>
+	  						</div>
+	  					</td>
 	  				</tr>
 	  				<tr>
 	  					<td><textarea class="form-control" placeholder="글 내용" name="bbsContent" maxlength="2048" style="height: 350px;"></textarea></td>
